@@ -132,4 +132,5 @@ main {
 .masinfo {
     display: flex;
     width: 70%;
+    text-align: center;
 }
