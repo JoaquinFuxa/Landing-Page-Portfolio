@@ -28,7 +28,7 @@ header {
 }
 
 .logo {
-    height: 250%;
+    height: 90%;
 }
 
 .navbar,
@@ -49,7 +49,7 @@ header {
 .navbar-list a {
     color: black;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 #menu-toggle, .menu-label {
@@ -108,13 +108,15 @@ main {
 }
 
 .botones a{
-    color: white;
+    color: black;
     background-color: var(--primary);
     width: 120px;
     padding: 10px 10px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
     text-align: center;
+    
 }
 
 .hero-card {
@@ -123,6 +125,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.hero-card img {
+    border-radius: 20px 60px 40px 80px;
 }
 
 #mas-info {
