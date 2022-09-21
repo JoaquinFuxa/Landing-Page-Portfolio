@@ -52,6 +52,10 @@ header {
     font-weight: 400;
 }
 
+#menu-toggle, .menu-label {
+    display: none;
+}
+
 main {
     background: var(--background);
     display: flex;
