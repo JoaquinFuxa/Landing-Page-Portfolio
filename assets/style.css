@@ -25,6 +25,7 @@ header {
     padding: 0px 30px 0px 30px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -42,6 +43,11 @@ header {
     gap: 150px;
 }
 
+.navbar i{
+    font-size: 36px;
+    display: none;
+}
+
 .navbar-list {
     gap: 30px;
 }
@@ -52,7 +58,7 @@ header {
     font-weight: 500;
 }
 
-#menu-toggle, .menu-label {
+#menu-toggle {
     display: none;
 }
 
@@ -116,7 +122,6 @@ main {
     font-size: 16px;
     font-weight: 500;
     text-align: center;
-    
 }
 
 .hero-card {
@@ -133,14 +138,10 @@ main {
 
 #mas-info {
     padding: 0 0 150px;
-    max-width: 1200px;
+    width: 80%;
+    max-width: 850px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.masinfo {
-    display: flex;
-    width: 70%;
     text-align: center;
 }
