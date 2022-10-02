@@ -210,50 +210,30 @@ main {
     display: flex;
     justify-content: center;
     width: 80%;
-    gap: 50px;
+    gap: 20px;
     flex-wrap: wrap;
+    padding: 0 0 30px;
 }
 
 #contact iframe {
     border-radius: 15px;
 }
 
-
 .info-contact h4 {
     font-size: 35px;
 }
 
-.gps {
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-}
-
-.gps img {
-    width: 30px;
-}
-
-.mail {
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-}
-
-.mail img {
-    width: 30px;
-}
-
-.tel {
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-}
-
-.tel img {
-    width: 30px;
-}
-
 .iconos-contact {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.iconos-contact img{
+    width: 30px;
+}
+
+.iconos-redes {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -261,6 +241,32 @@ main {
     gap: 20px;
 }
 
-.iconos-contact img {
+.iconos-redes img {
     width: 34px;
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(to bottom, var(--background), var(--primary));
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+footer a,
+footer p{
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
