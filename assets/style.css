@@ -30,6 +30,11 @@ header {
 
 .logo {
     height: 90%;
+    transition: 2s;
+}
+
+.logo:hover{
+    transform: rotate(360deg);
 }
 
 .navbar,
@@ -56,6 +61,12 @@ header {
     color: black;
     font-size: 16px;
     font-weight: 500;
+    transition: 0.5s;
+}
+
+.navbar-list a:hover {
+    color: white;
+    text-decoration:underline;
 }
 
 
@@ -99,32 +110,6 @@ main {
     background-clip: text;
     -webkit-background-clip: text;
 }
-
-
-/*.hero-info h1 {
-    display: block;
-    white-space: nowrap;
-    border-right: 4px solid white;
-    width: 26ch;
-    animation: typing 3s steps(26) infinite alternate, blink .5s infinite alternate step-end;
-    overflow:hidden;
-
-    background: linear-gradient(to top, #1d976c, #93f9b9);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-
-}
-
-@keyframes typing {
-    from { width: 0;
-    }
-}
-
-@keyframes blink {
-    50% { border-color: transparent;}
-}
-*/
 
 .hero-info p {
     font-size: 14px;
@@ -180,12 +165,13 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0 0 40px;
 }
 
 /* Info cards */
 
 #info {
-    padding: 70px 0;
+    padding: 40px 0;
     max-width: 1200px;
     display: flex;
     justify-content: center;
@@ -252,9 +238,9 @@ main {
     display: flex;
     justify-content: center;
     width: 80%;
-    gap: 20px;
+    gap: 50px;
     flex-wrap: wrap;
-    padding: 0 0 30px;
+    padding: 40px 0 30px;
 }
 
 #contact iframe {
@@ -331,4 +317,11 @@ footer p{
 
 ::-webkit-scrollbar-track {
     background: #303531;
+}
+
+.separador {
+    background: #303531;
+    height: 4px;
+    width: 90%;
+    border-radius: 2px;
 }
