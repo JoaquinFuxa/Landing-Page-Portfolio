@@ -58,6 +58,7 @@ header {
     font-weight: 500;
 }
 
+
 #menu-toggle {
     display: none;
 }
@@ -99,6 +100,32 @@ main {
     -webkit-background-clip: text;
 }
 
+
+/*.hero-info h1 {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid white;
+    width: 26ch;
+    animation: typing 3s steps(26) infinite alternate, blink .5s infinite alternate step-end;
+    overflow:hidden;
+
+    background: linear-gradient(to top, #1d976c, #93f9b9);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+@keyframes typing {
+    from { width: 0;
+    }
+}
+
+@keyframes blink {
+    50% { border-color: transparent;}
+}
+*/
+
 .hero-info p {
     font-size: 14px;
     width: 70%;
@@ -116,12 +143,22 @@ main {
 .botones a{
     color: black;
     background-color: var(--primary);
+    border: 2px solid var(--primary);
     width: 120px;
     padding: 10px 10px;
     border-radius: 20px;
     font-size: 16px;
     font-weight: 500;
     text-align: center;
+    transition:  .5s ease
+}
+
+.botones a:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 10px 0 var(--primary) inset, 0 0 10px 4px var(--primary);
+    border-radius: 20px;
 }
 
 .hero-card {
@@ -189,6 +226,11 @@ main {
     background-color: rgb(80, 80, 80);
     border-radius: 10px;
     gap: 20px;
+    transition: 0.25s;
+}
+
+.info-card:hover {
+    transform: scale(1.06);
 }
 
 .info-card img {
@@ -239,10 +281,16 @@ main {
     justify-content: left;
     padding: 10px;
     gap: 20px;
+    transition: 0.25s;
 }
 
 .iconos-redes img {
     width: 34px;
+    transition: 0.25s;
+}
+
+.iconos-redes img:hover{
+    transform: scale(1.4);
 }
 
 footer {
@@ -269,4 +317,18 @@ footer p{
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #1d976c, #93f9b9);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: #303531;
 }
